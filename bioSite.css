@@ -104,61 +104,95 @@ section {
 .footer {
   width: 100%;
   height: 669px;
-  background-color: #f0f0f0; /* Adjust background color if needed */
+  background-color: #f0f0f0;
+  /* Adjust background color if needed */
   border-top: 1px solid #f0f0f0;
   box-sizing: border-box;
 }
 
 .card {
-  width: 628px;
-  height: 304px;
+  width: auto;
+  height: auto;
   background-color: #ffffff;
   border-radius: 12px;
-  /* opacity: 0.5; */ /* Remove or adjust opacity if not needed */
+  /* opacity: 0.5; */
+  /* Remove or adjust opacity if not needed */
 }
+
 img {
   max-width: 25%;
-  height: auto; /* This ensures the image maintains its aspect ratio */
+  height: auto;
+  /* This ensures the image maintains its aspect ratio */
 }
 
 .active {
-  /* Add your styling for the active link here */
+  background-color: rgba(255, 165, 0, 0.2);
+  border-bottom: 2px solid #e67e22;
 }
 
 #container {
-  /* Your container styles go here */
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #f2f2f2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .intro {
-  /* Your intro section styles go here */
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
 }
 
 .main-content {
-  /* Your main content styles go here */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 figure {
-  /* Your figure styles go here */
+  margin: 0 auto;
+  border: 1px solid #eee;
+  padding: 5px;
 }
 
 .card {
-  /* Your card styles go here */
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .card-title {
-  /* Your card title styles go here */
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
 }
+
 .quote-carousel {
-  /* Your carousel styles go here */
+  overflow: hidden;
+  height: 200px;
 }
 
 .slide {
-  /* Your individual slide styles go here */
+  float: left;
+  width: 33%;
+  padding: 10px;
 }
 
 blockquote {
-  /* Your blockquote styles go here */
+  margin: 0;
+  padding: 100px;
+  border-left: 5px solid #ea2929;
 }
+
 .card-content {
-  /* Your card content styles go here */
+  padding: 15px;
+  font-size: 16px;
+  line-height: 1.5;
 }
