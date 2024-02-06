@@ -1,3 +1,8 @@
+<!-- 
+Shane Tinsley, Assignment 6.3, 2/5/24. First Draft of Homepage of bioSite. 
+Basic layout of HTML code. 
+References Text Book and W3Schools and Dr. Issa.
+-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,11 +11,12 @@
   <meta name="description" content="Memorial for Gordon Propst.">
   <meta name="keywords" content="Memorial, Celebration of Life, Death, Remembrance">
   <meta name="robots" content="nofollow">
-  <meta name="author" content="Shane Tinsley"> meta
+  <meta name="author" content="Shane Tinsley">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gordon Propst: A Remarkable Life and Legacy</title>
   <link rel="icon" href="images/candle.png" type="image/x-icon">
+  <link rel="shortcut icon" href="images/candle.png" type="image/x-icon">
   <link rel="stylesheet" href="bioSite.css">
 </head>
 
@@ -25,97 +31,70 @@
     </nav>
   </header>
 
-  <div id="container" style="width: 50%; float: left; padding-left: 2%;">
-    <div class="intro">
-      <h4>&hearts;</h4>
-      <h4>Gordon's Life</h4>
-      <p>Remembering Gordon - A Celebration of Life</p>
+  <h6>&hearts; Gordon Propst</h6>
+
+  <div id="intro">
+    <div class="intro-title">
+      <h1>Gordon Propst: <em>A Remarkable Life and Legacy!</em></h1>
     </div>
-  
-    <div class="main-content" style="width: 50%; float: left; padding-right: 2%;">
-      <h3>Welcome to Gordon's Memorial. Join us as we celebrate the life, hobbies, and achievements of Gordon Propst.</h3>
+
+    <div class="intro-content">
+      <h3>Welcome to Gordon's Memorial. Join us as we celebrate the life, hobbies, and achievements of Gordon Propst.
+      </h3>
     </div>
-  
+  </div>
 
-
-
-
-
-    <div class="hero">
+  <div id="hero">
+    <div class="hero-image">
       <figure>
-        <img src="../bioSite/images/Germany.jpg" alt="Gordon With Friends In Germany">
+        <img src="../bioSite/images/Dinner.jpg" alt="Gordon With Friends In Germany">
         <figcaption>(Gordon With Friends in Germany)</figcaption>
       </figure>
     </div>
   </div>
 
-  <div class="card">
-    <div class="card-title">Friends Remembering Gordon...</div>
+  <div id="card">
+    <div class="card-title">
+      Friends Remembering Gordon...
+    </div>
     <div class="card-content">
       <ul>
-        <li><i>"Gordon’s kindness and generosity were unsurpassed in this world. He was eternally optimistic and never
-            complained about anything, even when he was going through the darkest of times. He found joy in the
-            smallest of moments."</i> --Shane Tinsley, Friend of Gordon</li>
+        <li>"Gordon’s kindness and generosity were unsurpassed in this world. He was eternally optimistic and never
+          complained about anything, even when he was going through the darkest of times. He found joy in the smallest
+          of moments." -- Shane Tinsley, Friend of Gordon</li>
       </ul>
     </div>
+    <div id="card-image">
+      <div class="card-image">
+        <img src="/bioSite/images/Gordon.jpg" alt="Gordon Portrait">
+      </div>
+    </div>
   </div>
 
-  <div class="quote-carousel">
+
+  <div id="line">
+    <hr>
+  </div>
+
+  <div id="gallery">
     <div class="slide">
-      <img src="../bioSite/images/Disney.jpg" alt="Gordon At Disney">
+      <img src="../bioSite/images/Germany.jpg" alt="Gordon At Disney">
       <blockquote>"His laughter was infectious. He could always find the joy in any situation."</blockquote>
     </div>
-  </div>
-  <div class="slide">
-    <img src="../bioSite/images/Beach.jpg" alt="Gordon At the Beach">
-    <blockquote>"Gordon's love for the beach was unparalleled. It was his happy place."</blockquote>
-  </div>
-  <div class="slide">
-    <img src="../bioSite/images/Mountain.jpg" alt="Gordon Enjoying the Mountains">
-    <blockquote>"In the mountains, Gordon found solace and a connection to nature that fueled his spirit."</blockquote>
-  </div>
-</div>
-
-  <div class="photo-collage">
-    <figure>
-      <img src="../bioSite/images/Europe.jpg" alt="Gordon Explores Foreign Lands">
-      <figcaption>Exploring the world brought him peace and inspiration.</figcaption>
-    </figure>
-    <!-- Add more images if needed -->
-  </div>
-
-  <section class="timeline">
-    <div class="event">
-      <img src="../bioSite/images/Button.jpg" alt="Tribute To Gordon">
-      <h3>Tributes</h3>
-      <p>Gordon's Special Seat at the Table</p>
+    <div class="slide">
+      <img src="../bioSite/images/Balcony.jpg" alt="Gordon on Cruise">
+      <blockquote>"Gordon's love for ships was unparalleled. It was his happy place."</blockquote>
     </div>
-    <!-- Add more events if needed -->
-  </section>
-
-  <nav>
-    <ul>
-      <li><a href="#">Tribute</a></li>
-      <li><a href="#">Hobbies</a></li>
-      <li><a href="#">Achievements</a></li>
-    </ul>
-  </nav>
-
-  <main>
-    <section class="about">
-      <h2>About</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-    </section>
-
-    <section class="hobbies">
-      <h2>Hobbies</h2>
-      <div class="photo-collage">
-        <!-- Add hobby images here -->
-      </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-    </section>
-  </main>
-
+    <div class="slide">
+      <img src="../bioSite/images/Dinner.jpg" alt="Gordon Enjoying Food">
+      <blockquote>"Dinner in Paris."</blockquote>
+    </div>
+    <div class="slide">
+      <img src="../bioSite/images/Friends.jpg" alt="Gordon Enjoying Food">
+      <blockquote>"Good Food and Good Friends."</blockquote>
+    </div>
+  </div>
+  <h2>Share Your Memory</h2>
   <form action="contact-form.php" method="post">
     <label for="name">Your Name:</label>
     <input type="text" id="name" name="name"><br><br>
@@ -123,25 +102,25 @@
     <label for="email">Your Email:</label>
     <input type="email" id="email" name="email"><br><br>
 
-    <label for="message">Your Message:</label><br>
+    <label for="message">Share Your Memory:</label><br>
     <textarea id="message" name="message"></textarea><br><br>
 
     <button type="submit">Send Message</button>
   </form>
 
-  <aside>
-    <address>
+
+  <!-- <address>
       Written by John Doe.<br>
       Visit us at:<br>
       Example.com<br>
       Box 564, Disneyland<br>
       USA
     </address>
-  </aside>
+ -->
 
-  <footer>
-    &copy; 2024 Made With Love
-  </footer>
+  <div class="footer">
+    &copy; 2024 Made With Love - Shane Tinsley
+  </div>
 
 </body>
 

@@ -1,3 +1,8 @@
+<!-- 
+Shane Tinsley, Assignment 6.3, 2/5/24. First Draft of About bioSite. 
+Basic layout of HTML code. 
+References Text Book and W3Schools and Dr. Issa.
+-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,61 +14,100 @@
   <meta name="author" content="Shane Tinsley">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gordon Propst: A Remarkable Life and Legacy</title>
-  <link rel="stylesheet" href="#bioSite.css">
+  <title>About Gordon Propst: A Remarkable Life and Legacy</title>
+  <link rel="icon" href="images/candle.png" type="image/x-icon">
+  <link rel="shortcut icon" href="images/candle.png" type="image/x-icon">
+  <link rel="stylesheet" href="bioSite.css">
 </head>
-<body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="hobbies.html">Hobbies</a></li>
-        </ul>
-      </nav>
-    </header>
-  
-    <div id="container">
-      <div class="card">
-        <div class="card-title">Remembering Gordon Propst: A Celebration of Life</div>
-        <div class="card-content">
-          <!-- Your content here -->
-        </div>
-      </div>
-  
-      <div class="hero">
-        <img src="../bioSite/images/Gigi.jpg" alt="Banner image">
-      </div>
-  
-      <div class="card">
-        <div class="card-title">Friends Remembering Gordon...</div>
-        <div class="card-content">
-          <ul>
-            <li> <i>"Gordon’s kindness and generosity were unsurpassed in this world. He was eternally optimistic and never complained about anything, even when he was going through the darkest of times. He found joy in the smallest of moments."</i>
-          --Shane Tinsley
-          </ul>
-        </div>
-      </div>
-      <header>
-        <h2>Explore</h2>
-        <p>Explore Gordon's Life</p>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#">Tribute</a></li>
-            <li><a href="#">Hobbies</a></li>
-            <li><a href="#">Achievements</a></li>
-        </ul>
-    </nav>
-    </body>
-  
 
-  
-      <footer>
-        &copy; 2024 Made With Love
-      </footer>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="about.html">About</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h1>Gordon's Achievements</h1>
+
+  <p>My dear friend Gordon Propst, I will miss you so much. You were one of the few people in my life who just
+    understood me from the moment we met. We met by chance, and it was a party from that moment on.
+    Life with Gordon wasn't just a party; it was a grand, messy Carnival, laughter bubbling over with adventure tucked
+    around every corner. Traveling the world and adventure were his treasure troves. Gordon and I shared many adventures
+    together in many countries and spent long nights discussing promising future escapades...
+    But the treasures Gordon collected weren't just graphic tee-shirts and trinkets on his adventures. The real
+    treasures were the people and connections he made with them. He saw the sparkle in everyone's eyes, the potential
+    friend where others saw just a face in the crowd. And wouldn't you know it, he was usually right. Many of the
+    relationships that I value today are relationships that he helped build. His smile was like a magnet, drawing you in
+    with its warmth and genuine interest.
+    Gordon’s kindness and generosity were unsurpassed in this world. He was eternally optimistic and never complained
+    about anything, even when he was going through the darkest of times. He found joy in the smallest of moments.
+    Although I don’t drink anymore, I will sit with a margarita on the rocks and order one on occasion just for you.
+    Gordon was my family when I had none. He would always say, “I just love you so damn much, KID!” And I knew it was
+    true. We shared a love that few people will ever know.
+
+  </p>
+
+  <div id="line">
+    <hr>
+  </div>
+
+  <div id="card">
+    <div class="card-title">
+      Gordon's Timeline
     </div>
-  </body>
-  
-  </html>
-  
+    <div class="card-content">
+      <ol>
+        <li>Born</li>
+        <li>Graduates High School</li>
+        <li>Graduates From McNeese State University</li>
+        <li>Military Service</li>
+        <li>Marriage</li>
+        <li>Graduates Law School</li>
+        <li>Robinswood School Administrator</li>
+        <li>Becomes God Father</li>
+        <li>Travels The World</li>
+      </ol>
+    </div>
+    <div id="card-image">
+      <div class="card-image">
+        <img src="/bioSite/images/Gordon.jpg" alt="Gordon Portrait">
+      </div>
+    </div>
+  </div>
+
+
+  <h2>Share Your Memory</h2>
+  <form action="contact-form.php" method="post">
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+
+    <label for="email">Your Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+
+    <label for="message">Share Your Memory:</label><br>
+    <textarea id="message" name="message"></textarea><br><br>
+
+    <button type="submit">Send Message</button>
+  </form>
+
+
+  <!-- <address>
+      Written by John Doe.<br>
+      Visit us at:<br>
+      Example.com<br>
+      Box 564, Disneyland<br>
+      USA
+    </address>
+ -->
+
+  <div class="footer">
+    &copy; 2024 Made With Love - Shane Tinsley
+  </div>
+
+</body>
+
+</html>

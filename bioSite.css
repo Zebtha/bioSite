@@ -1,198 +1,200 @@
-body {
-  font-family: cursive;
-  margin: 0;
-  padding: 0;
-  background-color: #ffffff;
-}
-
-.button {
-  cursor: pointer;
-  width: 504px;
-  height: 46px;
-  padding: 0px 8px;
-  border: 1px solid #1d1d1f;
-  box-sizing: border-box;
-  border-radius: 12px;
-  background-color: #ffffff;
-  color: #1d1d1f;
-  font-size: 20px;
-  font-family: "Poppins";
-  line-height: 26px;
-  outline: none;
-}
-
-.input {
-  width: 504px;
-  height: 54px;
-  padding: 0px 8px;
-  border: 1px solid #cdcdd2;
-  box-sizing: border-box;
-  border-radius: 12px;
-  background-color: rgba(250, 250, 250, 0.8);
-  color: #1d1d1f;
-  font-size: 20px;
-  font-family: "Poppins";
-  font-weight: 300;
-  line-height: 22px;
-  outline: none;
-}
-
-.text {
-  color: #1d1d1f;
-  font-size: 40px;
-  font-family: "Poppins";
-  font-weight: 500;
-  line-height: 44px;
-}
-
-.icon {
-  color: #1d1d1f;
-  fill: #1d1d1f;
-  font-size: 32px;
-  width: 32px;
-  height: 32px;
-}
-
+/* 
+Shane Tinsley, Assignment 6.3, 2/5/24. First Draft of Master CSS for bioSite. 
+Basic layout of HTML code. 
+References Text Book and W3Schools and Dr. Issa.
+*/
 header {
-  background-color: #ffffff;
-  text-align: right;
-  padding: 30px;
-}
+   text-align: right;
+   padding: 0px;
+ }
 
-header h1 {
-  color: #fff;
-  font-size: 2em;
-}
+ .active {
+   background-color: #E6BEAE;
+   border-bottom: 2px solid #0D160B;
+ }
 
-header h2 {
-  color: #fff;
-  font-size: 1.5em;
-}
+ .active a {
+   color: black;
+ }
 
-nav {
-  background-color: #fff;
-  padding: 10px;
-}
+ nav {
+   padding: 20px;
+ }
 
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
+ nav ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+ }
 
-nav li {
-  display: inline-block;
-  margin-right: 15px;
-}
+ nav a {
+   text-decoration: none;
+   color: #BAA5FF;
+   font-weight: bold;
+ }
 
-nav a {
-  text-decoration: none;
-  color: #3498db;
-  font-weight: bold;
-}
+ nav li {
+   display: inline-block;
+   margin-right: 15px;
+ }
 
-main {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 30px;
-}
+ h6 {
+   font-size: 20px;
+   margin-left: 30px;
+   margin-bottom: 0px;
+ }
 
-section {
-  flex: 1 0 30%;
-}
+ body {
+   font-family: "Poppins";
+   margin: 0px;
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh
+ }
 
-.footer {
-  width: 100%;
-  height: 669px;
-  background-color: #f0f0f0;
-  /* Adjust background color if needed */
-  border-top: 1px solid #f0f0f0;
-  box-sizing: border-box;
-}
 
-.card {
-  width: auto;
-  height: auto;
-  background-color: #ffffff;
-  border-radius: 12px;
-  /* opacity: 0.5; */
-  /* Remove or adjust opacity if not needed */
-}
+ #intro {
+   width: 100%;
+   display: flex;
+   padding: 20px;
+   margin-top: 0px;
+ }
 
-img {
-  max-width: 25%;
-  height: auto;
-  /* This ensures the image maintains its aspect ratio */
-}
+ .intro-title {
+   width: 50%;
+   font-size: 10px;
+   text-align: left;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin-left: 20px;
+   margin-top: 0px;
+   padding: 0px;
 
-.active {
-  background-color: rgba(255, 165, 0, 0.2);
-  border-bottom: 2px solid #e67e22;
-}
+ }
 
-#container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 30px;
-  background-color: #f2f2f2;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+ .intro-content {
+   width: 50%;
+   font-size: 15px;
+   text-align: right;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin-right: 30px;
+   padding: 20px;
+ }
 
-.intro {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 24px;
-  font-weight: bold;
-  color: #333;
-}
+ .hero-image img {
+   width: 100%;
+   object-fit: cover;
+ }
 
-.main-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding: 20px;
-}
+ figure {
+   object-fit: contain;
+   width: 100%;
+   margin: 0 auto;
+   padding: 10px;
+ }
 
-figure {
-  margin: 0 auto;
-  border: 1px solid #eee;
-  padding: 5px;
-}
+ figcaption {
+   text-align: center;
+ }
 
-.card {
-  margin-bottom: 20px;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+ #card {
+   display: flex;
+   border-radius: 12px;
+   background-color: rgb(221, 211, 211, .5)
+ }
 
-.card-title {
-  font-size: 18px;
-  font-weight: bold;
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
-}
+ .card-content {
+   width: 50%;
+   font-size: 18px;
+   font-weight: bold;
+   padding: 10px;
 
-.quote-carousel {
-  overflow: hidden;
-  height: 200px;
-}
+ }
 
-.slide {
-  float: left;
-  width: 33%;
-  padding: 10px;
-}
+ .card-image {
+   flex: 1;
+   text-align: center;
 
-blockquote {
-  margin: 0;
-  padding: 100px;
-  border-left: 5px solid #ea2929;
-}
+ }
 
-.card-content {
-  padding: 15px;
-  font-size: 16px;
-  line-height: 1.5;
-}
+ .card-image img {
+   max-width: 50%;
+   height: auto;
+   border-radius: 12px;
+   border-radius: 50%;
+   object-fit: contain;
+   object-position: center;
+   border-style: solid;
+   border-color: black;
+
+ }
+
+ #gallery {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   padding: 20px;
+ }
+
+ .blockquote {
+   text-align: center;
+ }
+
+ .slide {
+   width: 48%;
+   margin-bottom: 20px;
+ }
+
+ .slide img {
+   max-width: 100%;
+ }
+
+ .button {
+   cursor: pointer;
+   width: 504px;
+   height: 46px;
+   padding: 0px 8px;
+   border: 1px solid #1d1d1f;
+   box-sizing: border-box;
+   border-radius: 12px;
+   background-color: #ffffff;
+   color: #1d1d1f;
+   font-size: 20px;
+   font-family: "Poppins";
+   line-height: 26px;
+   outline: none;
+ }
+
+ .input {
+   width: 504px;
+   height: 54px;
+   padding: 0px 8px;
+   border: 1px solid #cdcdd2;
+   box-sizing: border-box;
+   border-radius: 12px;
+   background-color: rgba(250, 250, 250, 0.8);
+   color: #1d1d1f;
+   font-size: 20px;
+   font-family: "Poppins";
+   font-weight: 300;
+   line-height: 22px;
+   outline: none;
+ }
+
+ .text {
+   color: #1d1d1f;
+   font-size: 40px;
+   font-family: "Poppins";
+   font-weight: 500;
+   line-height: 44px;
+ }
+
+ .footer {
+   width: 100%;
+   text-align: center;
+   padding: 10px;
+ }
