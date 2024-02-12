@@ -1,202 +1,234 @@
 /* 
-Shane Tinsley, Assignment 6.3, 2/5/24. First Draft of Master CSS for bioSite. 
+Shane Tinsley, Assignment 7.2, 2/12/24. Second Draft of Master CSS for bioSite. 
 Basic layout of HTML code. 
 References Text Book and W3Schools and Dr. Issa.
 https://zebtha.github.io/bioSite/
 https://github.com/Zebtha/bioSite.git
 */
-header {
-   text-align: right;
-   padding: 0px;
- }
 
- .active {
-   background-color: #E6BEAE;
-   border-bottom: 2px solid #0D160B;
- }
+.active {
+  background-color: #E6BEAE;
+  border-bottom: 2px solid #0D160B;
+}
 
- .active a {
-   color: black;
- }
+.active a {
+  color: black;
+}
 
- nav {
-   padding: 20px;
- }
+nav {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  background-color: white;
+  padding: 10px;
+}
 
- nav ul {
-   list-style: none;
-   margin: 0;
-   padding: 0;
- }
+nav ul {
+  list-style: none;
+  margin: 10px;
+  padding: 0;
+}
 
- nav a {
-   text-decoration: none;
-   color: #BAA5FF;
-   font-weight: bold;
- }
+nav a {
+  text-decoration: none;
+  color: #BAA5FF;
+  font-weight: bold;
+}
 
- nav li {
-   display: inline-block;
-   margin-right: 15px;
- }
+nav li {
+  display: inline-block;
+  margin-right: 15px;
+}
 
- h6 {
-   font-size: 20px;
-   margin-left: 30px;
-   margin-bottom: 0px;
- }
+h1 {
+  font-family: 'Crimson Pro', serif;
+  font-size: 30px;
+  color: #0D160B
+}
 
- body {
-   font-family: "Poppins";
-   margin: 0px;
-   padding: 0;
-   display: flex;
-   flex-direction: column;
-   min-height: 100vh
- }
+h2 {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 00px;
+}
 
+h6 {
+  font-family: "Protest Riot", sans-serif;
+  font-size: 25px;
+  margin: 0% 0% 0% 10%;
+  color: #DCD6FF;
+  -webkit-text-stroke: 1px #a9dad0;
+}
 
- #intro {
-   width: 100%;
-   display: flex;
-   padding: 20px;
-   margin-top: 0px;
- }
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0% 10% 10% 10%;
+}
 
- .intro-title {
-   width: 50%;
-   font-size: 10px;
-   text-align: left;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
-   margin-left: 20px;
-   margin-top: 0px;
-   padding: 0px;
+#intro {
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  margin-top: 0px;
+}
 
- }
+.intro-title {
+  width: 50%;
+  font-size: 15px;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-top: 0px;
+  padding: 0px;
+}
 
- .intro-content {
-   width: 50%;
-   font-size: 15px;
-   text-align: right;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
-   margin-right: 30px;
-   padding: 20px;
- }
+.intro-content {
+  width: 50%;
+  font-size: 15px;
+  text-align: right;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-right: 30px;
+  padding: 20px;
+}
 
- .hero-image img {
-   width: 100%;
-   object-fit: cover;
- }
+.hero-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
 
- figure {
-   object-fit: contain;
-   width: 100%;
-   margin: 0 auto;
-   padding: 10px;
- }
+figure {
+  object-fit: contain;
+  width: 100%;
+  margin: auto;
+  padding: 10px;
+}
 
- figcaption {
-   text-align: center;
- }
+figcaption {
+  font-family: 'Homemade Apple', cursive;
+  font-size: medium;
+  text-align: center;
+}
 
- #card {
-   display: flex;
-   border-radius: 12px;
-   background-color: rgb(221, 211, 211, .5)
- }
+#card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  border-radius: 12px;
+  background-color: rgb(221, 211, 211, .5);
+  padding: 10px;
+}
 
- .card-content {
-   width: 50%;
-   font-size: 18px;
-   font-weight: bold;
-   padding: 10px;
+.card-title {
+  grid-area: 1 / 1 / 1 / 1;
+}
 
- }
+.card-content {
+  grid-area: 1 / 1 / 1 / 1;
+  padding: 25px;
+}
 
- .card-image {
-   flex: 1;
-   text-align: center;
+.card-content {
+  display: flex;
+  align-items:end;
+  justify-content: center;
+}
 
- }
+.card-image {
+  text-align: center;
+}
 
- .card-image img {
-   max-width: 50%;
-   height: auto;
-   border-radius: 12px;
-   border-radius: 50%;
-   object-fit: contain;
-   object-position: center;
-   border-style: solid;
-   border-color: black;
+.card-image img {
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  max-width: 50%;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: black;
+}
 
- }
+#gallery {
+  font-family: 'Crimson Pro', serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
 
- #gallery {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
-   padding: 20px;
- }
+.blockquote {
+  text-align: center;
+}
 
- .blockquote {
-   text-align: center;
- }
+.slide {
+  width: 48%;
+  margin-bottom: 20px;
+}
 
- .slide {
-   width: 48%;
-   margin-bottom: 20px;
- }
+.slide img {
+  max-width: 100%;
+}
 
- .slide img {
-   max-width: 100%;
- }
+.aside {
+  float: right;
+}
 
- .button {
-   cursor: pointer;
-   width: 504px;
-   height: 46px;
-   padding: 0px 8px;
-   border: 1px solid #1d1d1f;
-   box-sizing: border-box;
-   border-radius: 12px;
-   background-color: #ffffff;
-   color: #1d1d1f;
-   font-size: 20px;
-   font-family: "Poppins";
-   line-height: 26px;
-   outline: none;
- }
+aside {
+  float: right;
+}
 
- .input {
-   width: 504px;
-   height: 54px;
-   padding: 0px 8px;
-   border: 1px solid #cdcdd2;
-   box-sizing: border-box;
-   border-radius: 12px;
-   background-color: rgba(250, 250, 250, 0.8);
-   color: #1d1d1f;
-   font-size: 20px;
-   font-family: "Poppins";
-   font-weight: 300;
-   line-height: 22px;
-   outline: none;
- }
+form {
 
- .text {
-   color: #1d1d1f;
-   font-size: 40px;
-   font-family: "Poppins";
-   font-weight: 500;
-   line-height: 44px;
- }
+  padding: 20px;
+  background-color: #a9dad0;
+}
 
- .footer {
-   width: 100%;
-   text-align: center;
-   padding: 10px;
- }
+.button {
+  cursor: pointer;
+  width: 504px;
+  height: 46px;
+  padding: 0px 8px;
+  border: 1px solid #1d1d1f;
+  box-sizing: border-box;
+  border-radius: 12px;
+  background-color: #ffffff;
+  color: #1d1d1f;
+  font-size: 20px;
+  font-family: "Poppins";
+  line-height: 26px;
+  outline: none;
+}
+
+.input {
+  width: 504px;
+  height: 54px;
+  padding: 0px 8px;
+  border: 1px solid #cdcdd2;
+  box-sizing: border-box;
+  border-radius: 12px;
+  background-color: rgba(250, 250, 250, 0.8);
+  color: #1d1d1f;
+  font-size: 20px;
+  font-family: "Poppins";
+  font-weight: 300;
+  line-height: 22px;
+  outline: none;
+}
+
+.text {
+  color: #1d1d1f;
+  font-size: 40px;
+  font-family: "Poppins";
+  font-weight: 500;
+  line-height: 44px;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+}

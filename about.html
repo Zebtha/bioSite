@@ -1,5 +1,5 @@
 <!-- 
-Shane Tinsley, Assignment 6.3, 2/5/24. First Draft of About bioSite. 
+Shane Tinsley, Assignment 7.2, 2/12/24. First Draft of About bioSite. 
 Basic layout of HTML code. 
 References Text Book and W3Schools and Dr. Issa.
 https://zebtha.github.io/bioSite/
@@ -19,6 +19,11 @@ https://github.com/Zebtha/bioSite.git
   <title>About Gordon Propst: A Remarkable Life and Legacy</title>
   <link rel="icon" href="images/candle.png" type="image/x-icon">
   <link rel="shortcut icon" href="images/candle.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@1,300&family=Homemade+Apple&family=Protest+Revolution&family=Protest+Riot&family=Roboto:ital,wght@1,900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="bioSite.css">
 </head>
 
@@ -34,24 +39,23 @@ https://github.com/Zebtha/bioSite.git
   </header>
 
   <h1>Gordon's Achievements</h1>
+  <div id="intro">
+    <div class="intro-title">
+      <p>
+        Life with Gordon wasn't just a party; it was a grand, messy Carnival, laughter bubbling over with adventure
+        tucked
+        around every corner. Traveling the world and adventure were his treasure troves. The real
+        treasures were the people and connections he made with them.
+      </p>
+    </div>
 
-  <p>My dear friend Gordon Propst, I will miss you so much. You were one of the few people in my life who just
-    understood me from the moment we met. We met by chance, and it was a party from that moment on.
-    Life with Gordon wasn't just a party; it was a grand, messy Carnival, laughter bubbling over with adventure tucked
-    around every corner. Traveling the world and adventure were his treasure troves. Gordon and I shared many adventures
-    together in many countries and spent long nights discussing promising future escapades...
-    But the treasures Gordon collected weren't just graphic tee-shirts and trinkets on his adventures. The real
-    treasures were the people and connections he made with them. He saw the sparkle in everyone's eyes, the potential
-    friend where others saw just a face in the crowd. And wouldn't you know it, he was usually right. Many of the
-    relationships that I value today are relationships that he helped build. His smile was like a magnet, drawing you in
-    with its warmth and genuine interest.
-    Gordon’s kindness and generosity were unsurpassed in this world. He was eternally optimistic and never complained
-    about anything, even when he was going through the darkest of times. He found joy in the smallest of moments.
-    Although I don’t drink anymore, I will sit with a margarita on the rocks and order one on occasion just for you.
-    Gordon was my family when I had none. He would always say, “I just love you so damn much, KID!” And I knew it was
-    true. We shared a love that few people will ever know.
-
-  </p>
+    <div class="intro-content">
+      He saw the sparkle in everyone's eyes, the potential
+      friend where others saw just a face in the crowd. Gordon’s kindness and generosity were unsurpassed in this world.
+      He was eternally optimistic and never complained
+      about anything, even when he was going through the darkest of times. He found joy in the smallest of moments.
+    </div>
+  </div>
 
   <div id="line">
     <hr>
@@ -76,35 +80,30 @@ https://github.com/Zebtha/bioSite.git
     </div>
     <div id="card-image">
       <div class="card-image">
-        <img src="/bioSite/images/Gordon.jpg" alt="Gordon Portrait">
+        <img src="images/Gordon.jpg" alt="Gordon Portrait">
       </div>
     </div>
   </div>
 
+  <div id="form">
+    <div class="form"></div>
+    <h3>Share Your Memory</h3>
+    <form action="contact-form.php" method="post">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name"><br><br>
 
-  <h2>Share Your Memory</h2>
-  <form action="contact-form.php" method="post">
-    <label for="name">Your Name:</label>
-    <input type="text" id="name" name="name"><br><br>
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email"><br><br>
 
-    <label for="email">Your Email:</label>
-    <input type="email" id="email" name="email"><br><br>
+      <label for="message">Share Your Memory:</label><br>
+      <textarea id="message" name="message"></textarea><br><br>
 
-    <label for="message">Share Your Memory:</label><br>
-    <textarea id="message" name="message"></textarea><br><br>
-
-    <button type="submit">Send Message</button>
-  </form>
-
-
-  <!-- <address>
-      Written by John Doe.<br>
-      Visit us at:<br>
-      Example.com<br>
-      Box 564, Disneyland<br>
-      USA
-    </address>
- -->
+      <button type="submit">Send Message</button>
+      <div class="aside"></div>
+      <aside><a href="https://www.johnsonfuneralhome.net/obits/gordon-meade-propst/">Visit Gordon's Family Tribute</a>
+      </aside>
+    </form>
+  </div>
 
   <div class="footer">
     &copy; 2024 Made With Love - Shane Tinsley
