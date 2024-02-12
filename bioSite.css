@@ -135,6 +135,7 @@ figcaption {
 }
 
 .card-image {
+  display: flex;
   margin-left: 50px;
   grid-area: 1 / 2 / 3 / 3;
   justify-self: center;
