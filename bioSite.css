@@ -126,6 +126,7 @@ figcaption {
 
 .card-title {
   grid-area: 1 / 1 / 2 / 2;
+  max-height: 20%;
 }
 
 .card-content {
