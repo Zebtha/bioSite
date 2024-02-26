@@ -1,5 +1,5 @@
 /* 
-Shane Tinsley, Assignment 7.2, 2/12/24. Second Draft of Master CSS for bioSite. 
+Shane Tinsley, Assignment 10, 2/23/24. Final Draft of Master CSS for bioSite. 
 Basic layout of HTML code. 
 References Text Book and W3Schools and Dr. Issa.
 https://zebtha.github.io/bioSite/
@@ -53,7 +53,7 @@ h2 {
 
 h6 {
   font-family: "Protest Riot", sans-serif;
-  font-size: 25px;
+  font-size: 35px;
   margin: 0% 0% 0% 10%;
   color: #DCD6FF;
   -webkit-text-stroke: 1px #a9dad0;
@@ -108,7 +108,7 @@ figure {
 }
 
 figcaption {
-  font-family: 'Homemade Apple', cursive;
+  font-family: 'Crimson Pro', serif;
   font-size: medium;
   text-align: center;
 }
@@ -125,13 +125,19 @@ figcaption {
 }
 
 .card-title {
+  display: flex;
   grid-area: 1 / 1 / 2 / 2;
-  max-height: 20%;
+  justify-self: left;
+  align-self: top;
+  padding: 10px;
 }
 
 .card-content {
+  display: flex;
   grid-area: 1 / 1 / 3 / 2;
-  padding: 20px;
+  justify-self: center;
+  align-self: center;
+  padding: 10%;
 }
 
 .card-image {
@@ -151,10 +157,13 @@ figcaption {
 }
 
 #gallery {
+  max-width: 90%;
   font-family: 'Crimson Pro', serif;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  justify-self: center;
+  align-self: center;
   padding: 20px;
 }
 
